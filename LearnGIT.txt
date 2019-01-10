@@ -13,5 +13,14 @@
  - then another window will open 
  - then press :wq
  - git push
- 
+ // Simple Single Branch Squash but add a different commit message (not the commit message thats in the actual commit)
+ - So you made 3-4 commits and you haven't pushed them yet.
+ - And you want all of them to a single commit then 
+ - git rebase -i
+ - This will open an interactive window, just put p for the one you want to keep and s for the one you want to squash
+ - then press :wq
+ - then another window will open 
+ - give some comments here for commit 
+ - then press :wq
+ - git push
  
