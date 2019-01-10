@@ -1,0 +1,3 @@
+// Change Last Commit Message
+ - If you have not pushed that commit yet
+ - Git commit --amend
