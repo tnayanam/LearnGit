@@ -23,4 +23,7 @@
  - give some comments here for commit 
  - then press :wq
  - git push
+ // To check Git commits
+  - Git log
+ 
  
