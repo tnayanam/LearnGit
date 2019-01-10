@@ -1,3 +1,17 @@
 // Change Last Commit Message
  - If you have not pushed that commit yet
  - Git commit --amend
+// Create a new Branch from an existing branch and checkout
+ - From Master branch run below commnd 
+ - Git checkout -b "MyNewBranch"
+// Simple Single Branch Squash 
+ - So you made 3-4 commits and you haven't pushed them yet.
+ - And you want all of them to a single commit then 
+ - git rebase -i
+ - This will open an interactive window, just put p for the one you want to keep and s for the one you want to squash
+ - then press :wq
+ - then another window will open 
+ - then press :wq
+ - git push
+ 
+ 
