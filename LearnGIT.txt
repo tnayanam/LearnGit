@@ -13,7 +13,7 @@
  - then another window will open 
  - then press :wq
  - git push
- // Simple Single Branch Squash but add a different commit message (not the commit message thats in the actual commit)
+// Simple Single Branch Squash but add a different commit message (not the commit message thats in the actual commit)
  - So you made 3-4 commits and you haven't pushed them yet.
  - And you want all of them to a single commit then 
  - git rebase -i
@@ -23,7 +23,17 @@
  - give some comments here for commit 
  - then press :wq
  - git push
- // To check Git commits
-  - Git log
+// To check Git commits
+ - Git log
+// Squash your commits and Pull and Merge
+ - You have some commits in your branch (child) and you have pushed those commits to child branch. your branch in clean
+ - Now you need to merge this to master, let's go
+ - Go to master and do a git pull
+ - Now you must have got some new changes, which needs to get into child branch
+ - Go to child branch and type git rebase -i master
+ - Now this will try to put master changes first and then your own commits.
+ - This will pop a window showing all your child commits, you can just pick and squash whatver you want, just keep 1st one as Pick
+ - then do a git push --force
+ - now you can create a pull request and merge too.
  
  
