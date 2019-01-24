@@ -35,5 +35,19 @@
  - This will pop a window showing all your child commits, you can just pick and squash whatver you want, just keep 1st one as Pick
  - then do a git push --force
  - now you can create a pull request and merge too.
+// Squash and Merge conflicts from multiple branch
+ - You are in child make all the changes
+ - Now you need to merge it into dev
+ - go to dev branch and pull the latest
+ - now go to child and type git rebase -i dev
+ - now this will open the editor select the commits you want from here
+ - you might get merge conflict here, so just fix the merge conflict and then type git add .
+ - and then type git rebase --continue
+ - you might need to add commit comments here
+ - now keep on doing this utill merge conflict is gone and everything is rebased
+ - now you need to push this change, just type git push --force 
+ - now go to server a create a pull request, if thats approved then merge it into dev
+ - and now you need to git pull from dev to get everything that got merged.
+ - ideally delete the brnach that got merged and create a new branch afresh.
  
  
