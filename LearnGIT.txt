@@ -49,5 +49,12 @@
  - now go to server a create a pull request, if thats approved then merge it into dev
  - and now you need to git pull from dev to get everything that got merged.
  - ideally delete the brnach that got merged and create a new branch afresh.
+// Single branch merge conflict
+ - commit your changes
+ - git pull
+ - if merge conflict fix it 
+ - git add
+ - git commit
+ - git push 
  
  
